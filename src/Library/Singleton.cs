@@ -5,7 +5,7 @@ public class Singleton<T> where T: new()
     
     private static T instance;
 
-    public static T Instance //propiedad de clase
+    public static T Instance //propiedad de clase Va a devolver el tipo de clase que yo ingresé.
         {
             get
             {
