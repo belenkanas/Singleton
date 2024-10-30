@@ -4,27 +4,12 @@ namespace Library
 {
     public class Greeter
     {
-        private Greeter()
+        public Greeter() //Así no es posible crear instancias de la clase Greeter.
         {
             // Intentionally left blank
         }
 
-        private static Greeter instance;
-
-        public static Greeter Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new Greeter();
-                }
-
-                return instance;
-            }
-        }
-
-        public void SayHiToTheWorld()
+        public void SayHiToTheWorld() //Método de instancia.
         {
             Console.WriteLine("Hello World!");
         }
